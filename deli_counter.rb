@@ -15,7 +15,7 @@ end
 
 def take_a_number(katz_deli, name)
   katz_deli << name
-     katz_deli.each.with_index do |n index|
+     katz_deli.each.with_index do |n, index|
       puts "Welcome, #{n}. You are number #{index + 1} in line."
 
     end
