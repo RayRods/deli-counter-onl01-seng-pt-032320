@@ -13,10 +13,10 @@ def line(katz_deli)
 
 end
 
-def take_a_number(katz_deli, person)
-  katz_deli.push(person)
-     katz_deli.map.with_index do |person, index|
-      puts "Welcome, #{person}. You are number #{index + 1} in line."
+def take_a_number(katz_deli, name)
+  katz_deli << name
+     katz_deli.map.with_index do |n, index|
+      puts "Welcome, #{n}. You are number #{index + 1} in line."
 
     end
   
